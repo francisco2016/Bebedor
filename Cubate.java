@@ -7,27 +7,60 @@
  */
 public class Cubate
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    // At para guardar el nombre de la copa.
+    private String nombreC;
+    //At para guardar el valor de alcohol de cada copa.
+    private float alcoholC;
 
     /**
-     * Constructor for objects of class Cubate
+     * Constructor for objects of class Cubate para inicializar los atributos con valores pasados por parámetro
      */
-    public Cubate()
+    public Cubate(String nombreC, float alcoholC)
     {
-        // initialise instance variables
-        x = 0;
+       this.nombreC = nombreC;
+       this.alcoholC = alcoholC;
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
+     * Mt. para poder asignar el nombre de la copa.
      */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public void setNombreC(String n){
+        nombreC = n;
+    }
+    
+    /**
+     * Mt. para poder asignar la cantidad de alcohol en la copa.
+     */
+    public void setAlcoholEnCopa(float al){
+        alcoholC = al;
+    }
+    
+    /**
+     * Mt para retornar el valor del nombre de la copa.
+     */
+    public String getNombreCopa(){
+        return nombreC;
+    }
+    
+    /**
+     * Mt para retornar el valor de alcohol en la copa.
+     */
+    public float getAlcoholEnCopa(){
+        return alcoholC;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
