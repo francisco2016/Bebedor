@@ -7,27 +7,51 @@
  */
 public class Bebedor
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    // At para guardar los grados de alcohol acumulados
+    private float alcoholEnS;
+    //At para guardar el valor del límite de alcohol
+    private float limite;
 
     /**
-     * Constructor for objects of class Bebedor
+     * Constructor para inicializar los atributos.
      */
-    public Bebedor()
+    public Bebedor(float limite)
     {
-        // initialise instance variables
-        x = 0;
+       alcoholEnS = 0f;
+       this.limite = limite;
+       
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
+     *Mt para sumar los grados de alcohol  que se van acumulando con cada copa  tomada.
      */
-    public int sampleMethod(int y)
+    public void ponmeUnaCopa(Cubata copa)
     {
-        // put your code here
-        return x + y;
+       alcoholEnS = alcoholEnS + copa.getAlcoholEnCopa();
+       if(alcoholEnS >= limite){
+           System.out.println("Otra copa??? \nNo, ya no tengo sed.  \n ");
+       }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

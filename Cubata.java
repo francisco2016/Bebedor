@@ -5,7 +5,7 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Cubate
+public class Cubata
 {
     // At para guardar el nombre de la copa.
     private String nombreC;
@@ -15,7 +15,7 @@ public class Cubate
     /**
      * Constructor for objects of class Cubate para inicializar los atributos con valores pasados por parámetro
      */
-    public Cubate(String nombreC, float alcoholC)
+    public Cubata(String nombreC, float alcoholC)
     {
        this.nombreC = nombreC;
        this.alcoholC = alcoholC;
